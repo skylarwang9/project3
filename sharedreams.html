@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"><!--charset: character encoding capable of encoding all characters on the web  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--for browser compatibility: choose rendering engine to view the page in an correct view (for old ver. IE)  -->
+        <title> exchange dreams</title><!--declaring the title, or name, of the HTML document. displayed in the browser's title bar-->
+        <meta name="description" content=""><!--keywords/snippet for search engines-->
+        <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
+        <link href="share.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Judson&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+        <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+</head>
+
+<body>
+  <div class="top">
+    <a href="html.html"><h1>Exchange Dreams</h1></a>
+  <div class="text">
+    <a href="sharedreams.html" class="share">Share Your Dream</a>
+  </div>
+  </div>
+  <div class="texts">Share one to see other's dreams</div>
+
+
+  <!-- <form action="action_page.php"> -->
+    <form id="message-form" action="#" method="post">
+    <div class="wrapper">
+      <!-- <span class="title">Name</span> -->
+      <input type="text" id="name" name="name" required="" 
+      maxlength="20" placeholder="Name*">
+      <br>
+      <br>
+      <!-- <span class="title">Date</span> -->
+      <input type="text"  name="date" id="date" placeholder="Date*" required="">
+      <br>
+      <br>
+      <input type="text"  name="dreamtitle" id="dreamtitle" placeholder="A title for your dream?">
+      <br>
+      <br>
+      <!-- <span class="title">Your Dream</span> -->
+      <textarea name="content" id="content" class="field" spellcheck="false" placeholder="Describe your dream* (800 characters max)" required="" maxlength="800"></textarea>
+      <br>
+      <br>
+      <input type="file" name="fileupload" id="fileupload" style="display: none;" hidden="hidden">
+      <button type="button" id="imgupload">upload an image</button>
+      <span id="imgtext">no file chosen yet</span>
+      <!-- <form action="upload.php" method="post" enctype="multipart/form-data"> -->
+      <!-- </form> -->
+
+      <div class="button">
+        <a href="thx.html" class="buttontext">Share</a>
+      </div>
+      <!-- <input type="submit" value="Share" class="submit"> -->
+    <!-- <div submit-success>
+                <template type="amp-mustache">
+                    <p class="form-submit-response">
+                        Success! Thanks {{name}} for sharing!
+                    </p>
+                </template>
+    </div>
+    <div submit-error>
+          <template type="amp-mustache">
+              <p class="form-submit-response">
+              Oops! Sorry, there was an error.
+              </p>
+          </template>
+    </div> -->
+   </div>
+  </form>
+
+</body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/share.js"></script>
+</html>
