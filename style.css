@@ -1,0 +1,41 @@
+body{
+	display: block;
+	background-image: url('img/dream1.jpg');
+	/*background-repeat: no-repeat;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.title{
+	/*width: 50%;*/
+	top: 100px;
+	left:30%;
+	position: absolute;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 50px;
+	text-align: center;
+	line-height: 240%;
+}
+h1{
+	color: white;
+	left: 5%;
+	position: relative;
+}
+
+.links{
+	/*width: 50vw;*/
+	top:450px;
+	position: absolute;
+	left: 41%;
+	font-family: canto,serif;
+font-weight: 600;
+font-style: italic;
+	font-size: 35px;
+	text-align: center;
+}
+.button1{
+	text-decoration-color: white;
+	color: white;
+	text-decoration: none;
+}
